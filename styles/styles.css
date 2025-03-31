@@ -14,15 +14,14 @@ body{
 .hero {
     position: relative;
     background: url('../assets/BlingItOn_Banner.jpg') no-repeat center center/cover;
-    height: 80vh; /* Adjust as needed */
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     overflow: hidden; /* Ensures no unwanted overflow */
     border-bottom: var(--mauve) solid 10px;
-    padding-top: 10ch;
-    padding-bottom: 10ch;
+    padding-top: 20ch;
+    padding-bottom: 20ch;
 }
 
 /* Darken only the background using a pseudo-element */
@@ -93,7 +92,7 @@ body{
 @media (min-width: 1920px){
     .side-banner {
         
-        width: 300px; /* Banner width */
+        width: 250px; /* Banner width */
         
     }
 }
