@@ -21,6 +21,8 @@ body{
     color: white;
     overflow: hidden; /* Ensures no unwanted overflow */
     border-bottom: var(--mauve) solid 10px;
+    padding-top: 10ch;
+    padding-bottom: 10ch;
 }
 
 /* Darken only the background using a pseudo-element */
