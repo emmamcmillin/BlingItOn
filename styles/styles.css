@@ -1,0 +1,171 @@
+:root{
+    --burgundy: #5A2342; 
+    --mauve: #B5667C; 
+    --coral: #FE6E89;
+    --peach: #FFB7CB;
+    --sand: #FBD5E0;
+    --cream: #F4EAEE;
+}
+
+body{
+    background-color: var(--peach);
+}
+
+.hero {
+    position: relative;
+    background: url('../assets/BlingItOn_Banner.jpg') no-repeat center center/cover;
+    height: 80vh; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: hidden; /* Ensures no unwanted overflow */
+    border-bottom: var(--mauve) solid 10px;
+}
+
+/* Darken only the background using a pseudo-element */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: brightness(50%); /* Darkens the background */
+    z-index: 0; /* Places it behind the text */
+}
+
+/* Ensure the text remains bright and above the overlay */
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar{
+    background-color: var(--burgundy); 
+    
+}
+
+.navbar-brand{
+    filter: brightness(80%);
+    transition: filter linear 0.3s;
+}
+
+.navbar-brand:hover{
+    filter: brightness(100%);
+
+}
+
+/* Side Banner Style */
+.side-banner {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 150px; /* Banner width */
+    z-index: -1; /* To keep banners behind the main content */
+    filter: brightness(70%);
+}
+
+/* Left side banner */
+.side-banner.left {
+    left: 0;
+    background: url('../assets/BlingItOn_SideBanner.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+/* Right side banner */
+.side-banner.right {
+    right: 0;
+    background: url('../assets/BlingItOn_SideBanner.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+/* Make sure banners are only visible on larger screens */
+@media (min-width: 1921px) {
+    .side-banner {
+        display: block; /* Show banners on large screens */
+    }
+}
+
+@media (min-width: 2200px){
+    .side-banner {
+        
+        width: 300px; /* Banner width */
+        
+    }
+}
+
+/* Hide banners on mobile/tablet */
+@media (max-width: 1920px) {
+    .side-banner {
+        display: none;
+    }
+}
+
+
+
+/* Buttons */
+.btn-custom {
+    background-color: var(--coral);
+    color: var(--burgundy);
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+.btn-custom:hover {
+    background-color: var(--coral);
+    filter: brightness(140%);
+    color: var(--cream);
+}
+
+/* Carousel */
+.carousel-inner {
+    display: flex;
+    align-items: center;
+}
+.carousel-item {
+    text-align: center;
+}
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: brightness(200%); /* Makes them fully white */
+    width: 3rem; /* Adjusts size */
+    height: 3rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 30% opacity */
+    border-radius: 100%;
+    padding: 20px;
+    
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 1 !important; /* Ensures visibility */
+    width: auto;
+}
+
+/* Move arrows outward on larger screens */
+@media (min-width: 992px) { /* Targets large screens (laptops, desktops) */
+    .carousel-control-prev {
+        left: -15px; /* Move left arrow further left */
+    }
+
+    .carousel-control-next {
+        right: -15px; /* Move right arrow further right */
+    }
+}
+
+
+footer{
+    background-color: var(--burgundy); 
+    
+}
