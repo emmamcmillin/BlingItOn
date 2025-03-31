@@ -13,7 +13,7 @@ body{
 
 .hero {
     position: relative;
-    background: url('../assets/BlingItOn_Banner.jpg') no-repeat center center/cover;
+    background: url('/assets/BlingItOn_Banner.jpg') no-repeat center center/cover;
     height: 80vh; /* Adjust as needed */
     display: flex;
     align-items: center;
@@ -70,14 +70,14 @@ body{
 /* Left side banner */
 .side-banner.left {
     left: 0;
-    background: url('../assets/BlingItOn_SideBanner.jpg') no-repeat center center;
+    background: url('/assets/BlingItOn_SideBanner.jpg') no-repeat center center;
     background-size: cover;
 }
 
 /* Right side banner */
 .side-banner.right {
     right: 0;
-    background: url('../assets/BlingItOn_SideBanner.jpg') no-repeat center center;
+    background: url('/assets/BlingItOn_SideBanner.jpg') no-repeat center center;
     background-size: cover;
 }
 
