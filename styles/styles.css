@@ -13,7 +13,7 @@ body{
 
 .hero {
     position: relative;
-    background: url('/assets/BlingItOn_Banner.jpg') no-repeat center center/cover;
+    background: url('../assets/BlingItOn_Banner.jpg') no-repeat center center/cover;
     height: 80vh; /* Adjust as needed */
     display: flex;
     align-items: center;
@@ -70,25 +70,25 @@ body{
 /* Left side banner */
 .side-banner.left {
     left: 0;
-    background: url('/assets/BlingItOn_SideBanner.jpg') no-repeat center center;
+    background: url('../assets/BlingItOn_SideBanner.jpg') no-repeat center center;
     background-size: cover;
 }
 
 /* Right side banner */
 .side-banner.right {
     right: 0;
-    background: url('/assets/BlingItOn_SideBanner.jpg') no-repeat center center;
+    background: url('../assets/BlingItOn_SideBanner.jpg') no-repeat center center;
     background-size: cover;
 }
 
 /* Make sure banners are only visible on larger screens */
-@media (min-width: 1921px) {
+@media (min-width: 1901px) {
     .side-banner {
         display: block; /* Show banners on large screens */
     }
 }
 
-@media (min-width: 2200px){
+@media (min-width: 1920px){
     .side-banner {
         
         width: 300px; /* Banner width */
@@ -97,7 +97,7 @@ body{
 }
 
 /* Hide banners on mobile/tablet */
-@media (max-width: 1920px) {
+@media (max-width: 1900px) {
     .side-banner {
         display: none;
     }
